@@ -360,7 +360,7 @@ Base.@kwdef struct PsTriRecyControl
     p::Int = 50
     p_min::Int = 1
 
-    lobpcg_tol_scale::Float64 = 0.01
+    lobpcg_tol_scale::Float64 = 0.1
     lobpcg_side::Char = 'L'
 
     implict_update::Bool = false

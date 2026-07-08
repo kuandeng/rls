@@ -17,7 +17,6 @@ default_control = PsTriRecyControl(
     normC = normC,
     tol = 1e-4,
     recy_tau = 1.6,
-    lobpcg_tol_scale = 0.1,
     gap_tau = 1e-10,
     implict_recycle = true,
     p = 60,

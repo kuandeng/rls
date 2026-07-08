@@ -15,7 +15,6 @@ rec = recursion_grid(x_st, x_ed, y_st, y_ed, n_x, n_y, k)
 
 default_control = PsPrecRecyControl(
     tol = 1e-4,
-    lobpcg_tol_scale = 0.1,
     main_normC = normC,
     main_tau = 1.6,
     gap_tau = 1e-10,

@@ -33,7 +33,7 @@ n_x, n_y = grid.n_x, grid.n_y
 k = grid.k
 rec = recursion_grid(x_st, x_ed, y_st, y_ed, n_x, n_y, k)
 
-default_control = PsTriRecyControl(normC = 1.0, tol = 1e-4, recy_tau = 1.6, lobpcg_tol_scale = 0.1, p=60, implict_recycle = true)
+default_control = PsTriRecyControl(normC = 1.0, tol = 1e-4, recy_tau = 1.6, p = 60, implict_recycle = true)
 control = parse_ps_tri_recy_control_args(default_control)
 elapsed = @elapsed begin
     σ_min, stats = psTriRecy(C, rec; control = control)
@@ -74,4 +74,3 @@ plt = contour(
 png_path = joinpath(output_dir, "psTriRecy_contour.png")
 savefig(plt, png_path)
 println("saved contour to ", png_path)
-

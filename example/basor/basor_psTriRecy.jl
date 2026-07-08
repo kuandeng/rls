@@ -21,7 +21,6 @@ default_control = PsTriRecyControl(
     p = 60,
     recy_tau = 1.6,
     gap_tau = 1.0e-10,
-    lobpcg_tol_scale = 0.1,
     implict_recycle = true
 )
 control = parse_ps_tri_recy_control_args(default_control)
